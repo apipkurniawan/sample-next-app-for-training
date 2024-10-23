@@ -6,6 +6,22 @@ Login design : https://www.figma.com/design/c7ZP5RYJrFNubZ3mG6SXKv/UI-Day-001---
 
 PPT : https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 
+Feature :
+
+- Authentication
+- Authorization
+- Auth Guard
+- Dark mode
+- Internationalization (ID/EN)
+- CRUD
+- UseQuery & UseMutation
+- Custom Hooks
+- Router
+- Zustand
+- Idle Time
+- Tailwind CSS
+- MicroFrontend
+
 First, run the development server:
 
 ```bash
@@ -19,8 +35,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
