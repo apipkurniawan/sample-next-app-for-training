@@ -2,6 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Login design : https://www.figma.com/design/c7ZP5RYJrFNubZ3mG6SXKv/UI-Day-001---Login-Page-(Community)?node-id=8-2&node-type=frame&t=uVyROHTIIzUNudrE-0
+
+PPT : https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
+
 First, run the development server:
 
 ```bash
