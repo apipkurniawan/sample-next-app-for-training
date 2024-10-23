@@ -19,6 +19,7 @@ Feature :
 - Router
 - Zustand
 - Idle Time
+- Responsive Layout
 - Tailwind CSS
 - MicroFrontend
 
