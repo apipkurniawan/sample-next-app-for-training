@@ -19,7 +19,6 @@ const LoginForm: React.FC = () => {
 
     try {
       const response = await axios.post("/api/login", { username, password });
-      console.log("res", response);
       if (response.status === 200) {
         Cookies.set("token", response.data.token, { expires: 1 });
         router.push("/");
