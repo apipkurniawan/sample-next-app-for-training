@@ -46,6 +46,11 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 # component
 # dynamic routing
 # internationalization (ID/EN)
+```
+
+- Authentication && Authorization
+
+```bash
 # middleware (route guard)
 ```
 
@@ -73,8 +78,6 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 ```bash
 # create useLocale
 ```
-
-- Authorization
 
 - Dark mode
 
