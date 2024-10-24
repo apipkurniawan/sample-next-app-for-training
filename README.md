@@ -51,15 +51,17 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 # middleware (route guard)
 ```
 
-- Authentication
+- Data Fetching
+
+```bash
+# react query
+```
 
 - Authorization
 
 - Dark mode
 
 - CRUD
-
-- UseQuery & UseMutation
 
 - Custom Hooks
 
