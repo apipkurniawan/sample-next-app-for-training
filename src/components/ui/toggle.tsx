@@ -1,4 +1,3 @@
-// components/Toggle.tsx
 import React from "react";
 
 interface ToggleProps {
@@ -11,7 +10,7 @@ const Toggle: React.FC<ToggleProps> = ({ isChecked, onToggle }) => {
     <div
       onClick={() => onToggle(!isChecked)}
       className={`flex items-center cursor-pointer ${
-        isChecked ? "bg-blue-600" : "bg-gray-300"
+        isChecked ? "bg-orange-400" : "bg-gray-300"
       } w-12 h-6 rounded-full transition duration-200`}
     >
       <div

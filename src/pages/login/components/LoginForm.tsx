@@ -1,4 +1,3 @@
-// components/LoginForm.tsx
 import enLocale from "@/locales/en";
 import idLocale from "@/locales/id";
 import { useRouter } from "next/router";

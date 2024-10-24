@@ -34,6 +34,13 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
   ## styles
 ```
 
+- Warm up
+
+```bash
+# lifecycle react
+# tailwind css
+```
+
 - Routing
 
 ```bash
