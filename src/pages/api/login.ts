@@ -19,6 +19,7 @@ export default async function handler(
         code: "SC-11",
         message: "Login successful",
         token: "kA3jsh82i77",
+        role: "OPERATOR",
       });
     } else {
       return res.status(401).json({ message: "Invalid credentials" });
