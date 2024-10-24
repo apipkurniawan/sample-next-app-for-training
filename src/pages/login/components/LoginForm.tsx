@@ -1,10 +1,13 @@
 // components/LoginForm.tsx
+import enLocale from "@/locales/en";
+import idLocale from "@/locales/id";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 // import axios from "axios";
 
 const LoginForm: React.FC = () => {
   const router = useRouter();
+  const text = router.locale === "id" ? idLocale : enLocale;
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -66,7 +69,7 @@ const LoginForm: React.FC = () => {
         type="submit"
         className="w-full py-2 px-4 bg-orange-600 text-white font-semibold rounded-md shadow hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-opacity-50"
       >
-        Login
+        {text.button.login}
       </button>
     </form>
   );
