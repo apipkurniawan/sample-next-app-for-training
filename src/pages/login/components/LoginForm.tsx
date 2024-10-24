@@ -28,7 +28,8 @@ const LoginForm: React.FC = () => {
 
       setLoading(false);
       if (response.status === 200) {
-        Cookies.set("token", response.data.token, { expires: 1 });
+        Cookies.set("token", response.data.token, { expires: 1, secure: true });
+        Cookies.set("role", response.data.role, { expires: 1, secure: true });
         router.push("/");
       } else {
         setError(response.statusText);
