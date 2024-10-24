@@ -1,14 +1,11 @@
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React from "react";
 import { twMerge } from "tailwind-merge";
 
 const ToggleLocale: React.FC = () => {
   const router = useRouter();
 
-  const [locale, setLocale] = useState<string>("");
-
   const updateLocale = (localePar: string) => {
-    setLocale(localePar);
     router.push(router.pathname, router.asPath, { locale: localePar });
   };
 
@@ -18,7 +15,7 @@ const ToggleLocale: React.FC = () => {
         onClick={() => updateLocale("id")}
         className={twMerge(
           "cursor-pointer px-4 py-2 transition-all",
-          locale === "id" && "rounded-full bg-orange-400"
+          router.locale === "id" && "rounded-full bg-orange-400"
         )}
       >
         ID
@@ -27,7 +24,7 @@ const ToggleLocale: React.FC = () => {
         onClick={() => updateLocale("en")}
         className={twMerge(
           "cursor-pointer px-4 py-2 transition-all",
-          locale === "en" && "rounded-full bg-orange-400"
+          router.locale === "en" && "rounded-full bg-orange-400"
         )}
       >
         EN
