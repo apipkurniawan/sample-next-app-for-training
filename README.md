@@ -39,7 +39,6 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 ```bash
 # lifecycle react
 # tailwind css
-# tailwind merge
 ```
 
 - Routing
@@ -53,16 +52,33 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 ```
 
 - Authentication
+
 - Authorization
+
 - Auth Guard
+
 - Dark mode
+
 - CRUD
+
 - UseQuery & UseMutation
+
 - Custom Hooks
+
 - Zustand
+
 - Idle Time
+
 - Responsive Layout
+
 - MicroFrontend
+
+- Tips
+
+```bash
+# tailwind merge (chaining tailwind class)
+# custom hooks
+```
 
 ### Run the development server:
 
