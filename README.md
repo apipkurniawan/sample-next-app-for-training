@@ -25,8 +25,10 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 ```bash
 # root folder src
   ## components
+  ## hooks
   ## locales
   ## pages
+  ## store
   ## styles
 ```
 
@@ -50,7 +52,8 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 - Data Fetching
 
 ```bash
-# react query (client-side)
+# client-side
+  ## react query (useQuery, useMutation)
 ```
 
 - Idle Timer
@@ -65,13 +68,17 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 # zustand
 ```
 
+- Custom Hooks
+
+```bash
+# create useLocale
+```
+
 - Authorization
 
 - Dark mode
 
 - CRUD
-
-- Custom Hooks
 
 - Responsive Layout
 
