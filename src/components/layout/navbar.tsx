@@ -7,7 +7,10 @@ function Navbar() {
       <Link href="/">Home</Link>
       <Link href="/about">About Us</Link>
       <Link href="/blog">Blog Post</Link>
-      <Link href="/shallow">shallow</Link>
+      {/* <Link href="/shallow">shallow</Link> */}
+      <Link href="/login" className="font-bold">
+        Logout
+      </Link>
     </div>
   );
 }

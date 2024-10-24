@@ -1,5 +1,5 @@
-import Footer from "./footer";
-import Navbar from "./navbar";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 type LayoutProps = {
   children: React.ReactElement;
