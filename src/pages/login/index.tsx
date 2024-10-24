@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LoginForm from "./components/LoginForm";
 import Toggle from "@/components/ui/ToggleLocale";
+import Cookies from "js-cookie";
 
 const LoginPage: React.FC = () => {
+  useEffect(() => {
+    Cookies.remove("token");
+  }, []);
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">

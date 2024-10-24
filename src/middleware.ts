@@ -2,14 +2,16 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  const token = "";
-  console.log("url", request.url);
+  const token = request.cookies.get("token")?.value;
 
+  // cek token
   if (!token) {
     return NextResponse.redirect(new URL("/login", request.url));
-  } else {
-    return NextResponse.next();
   }
+
+  // todo : validate token
+
+  return NextResponse.next();
 }
 
 // route guard

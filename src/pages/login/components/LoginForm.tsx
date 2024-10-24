@@ -2,7 +2,8 @@ import enLocale from "@/locales/en";
 import idLocale from "@/locales/id";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
+import Cookies from "js-cookie";
 
 const LoginForm: React.FC = () => {
   const router = useRouter();
@@ -16,14 +17,18 @@ const LoginForm: React.FC = () => {
     e.preventDefault();
     setError("");
 
-    router.push("/");
-    // try {
-    //   const response = await axios.post("/api/login", { email, password });
-    //   console.log(response.data);
-    //   // Handle successful login here (e.g., redirect)
-    // } catch (err) {
-    //   setError("Invalid email or password");
-    // }
+    try {
+      const response = await axios.post("/api/login", { username, password });
+      console.log("res", response);
+      if (response.status === 200) {
+        Cookies.set("token", response.data.token, { expires: 1 });
+        router.push("/");
+      }
+
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (err) {
+      setError("Invalid username or password");
+    }
   };
 
   return (
@@ -33,7 +38,7 @@ const LoginForm: React.FC = () => {
     >
       <div>
         <label
-          htmlFor="email"
+          htmlFor="username"
           className="block text-sm font-medium text-gray-700"
         >
           Username
