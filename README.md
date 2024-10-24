@@ -14,18 +14,27 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 
 ### Table of Content :
 
+- Installation
+
 ```bash
-Installation
 # Node 20.18.0
 # Next 14.2.16
 # Pages Router
-Project Structure
+```
+
+- Project Structure
+
+```bash
 # root folder src
   ## components
   ## locales
   ## pages
   ## styles
-Routing
+```
+
+- Routing
+
+```bash
 # page & layout
 # component
 # dynamic routing
