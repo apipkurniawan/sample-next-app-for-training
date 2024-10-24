@@ -39,6 +39,7 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 ```bash
 # lifecycle react
 # tailwind css
+# tailwind merge
 ```
 
 - Routing
