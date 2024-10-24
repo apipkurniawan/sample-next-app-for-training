@@ -20,6 +20,7 @@ const LoginForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+    setErrorMessage("");
     setLoading(true);
 
     try {
@@ -28,7 +29,6 @@ const LoginForm: React.FC = () => {
       setLoading(false);
       if (response.status === 200) {
         Cookies.set("token", response.data.token, { expires: 1 });
-        setErrorMessage("");
         router.push("/");
       } else {
         setError(response.statusText);
