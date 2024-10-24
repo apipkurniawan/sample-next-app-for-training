@@ -8,19 +8,35 @@ PPT : https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 
 Feature :
 
+```bash
+Installation
+# Node 20.18.0
+# Next 14.2.16
+# Pages Router
+Project Structure
+# root folder src
+  ## components
+  ## locales
+  ## pages
+  ## styles
+Routing
+# page & layout
+# component
+# dynamic routing
+# internationalization (ID/EN)
+
+```
+
 - Authentication
 - Authorization
 - Auth Guard
 - Dark mode
-- Internationalization (ID/EN)
 - CRUD
 - UseQuery & UseMutation
 - Custom Hooks
-- Router
 - Zustand
 - Idle Time
 - Responsive Layout
-- Tailwind CSS
 - MicroFrontend
 
 First, run the development server:
