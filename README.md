@@ -14,6 +14,8 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 
 ### Table of Content :
 
+- Demo App
+
 - Installation
 
 ```bash
