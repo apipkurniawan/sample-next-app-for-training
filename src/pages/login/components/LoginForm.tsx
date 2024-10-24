@@ -4,9 +4,11 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import { useSessionStore } from "@/store/useSessionStore";
 
 const LoginForm: React.FC = () => {
   const router = useRouter();
+  const { setErrorMessage } = useSessionStore();
   const text = router.locale === "id" ? idLocale : enLocale;
 
   const [username, setUsername] = useState("");
@@ -26,6 +28,7 @@ const LoginForm: React.FC = () => {
       setLoading(false);
       if (response.status === 200) {
         Cookies.set("token", response.data.token, { expires: 1 });
+        setErrorMessage("");
         router.push("/");
       } else {
         setError(response.statusText);

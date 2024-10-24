@@ -19,7 +19,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-idle-timer": "^5.7.2",
-    "tailwind-merge": "^2.5.4"
+    "tailwind-merge": "^2.5.4",
+    "zustand": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

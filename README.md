@@ -50,7 +50,19 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 - Data Fetching
 
 ```bash
-# react query
+# react query (client-side)
+```
+
+- Idle Timer
+
+```bash
+# react idle timer
+```
+
+- State Management
+
+```bash
+# zustand
 ```
 
 - Authorization
@@ -60,10 +72,6 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 - CRUD
 
 - Custom Hooks
-
-- Zustand
-
-- Idle Time
 
 - Responsive Layout
 
