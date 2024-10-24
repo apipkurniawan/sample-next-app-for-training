@@ -11,21 +11,29 @@ const LoginForm: React.FC = () => {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+    setLoading(true);
 
     try {
       const response = await axios.post("/api/login", { username, password });
+
+      setLoading(false);
       if (response.status === 200) {
         Cookies.set("token", response.data.token, { expires: 1 });
         router.push("/");
+      } else {
+        setError(response.statusText);
       }
 
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
+      setLoading(false);
       setError("Invalid username or password");
     }
   };
@@ -70,9 +78,36 @@ const LoginForm: React.FC = () => {
       {error && <p className="text-red-500">{error}</p>}
       <button
         type="submit"
-        className="w-full py-2 px-4 bg-orange-600 text-white font-semibold rounded-md shadow hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-opacity-50"
+        disabled={loading}
+        className="w-full text-center py-2 px-4 bg-orange-600 text-white font-semibold rounded-md shadow hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-opacity-50"
       >
-        {text.button.login}
+        {loading ? (
+          <span className="flex items-center justify-center">
+            {/* Loading Spinner */}
+            <svg
+              className="animate-spin h-5 w-5 mr-3 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              ></path>
+            </svg>
+          </span>
+        ) : (
+          text.button.login
+        )}
       </button>
     </form>
   );

@@ -1,10 +1,8 @@
 ## Getting Started
 
-### Login design :
+### Demo App :
 
-```bash
-https://www.figma.com/design/c7ZP5RYJrFNubZ3mG6SXKv/UI-Day-001---Login-Page-(Community)?node-id=8-2&node-type=frame&t=uVyROHTIIzUNudrE-0
-```
+todo
 
 ### Materi :
 
@@ -13,8 +11,6 @@ https://www.canva.com/design/DAGS3I19HTA/ehxH40lMUP-wml2dHr1Cnw/edit
 ```
 
 ### Table of Content :
-
-- Demo App
 
 - Installation
 
